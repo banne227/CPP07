@@ -55,6 +55,16 @@ int main()
 
     std::cout << "String array: ";
     iter(strArr, 3, print<std::string>);
-    std::cout << std::endl;
+    std::cout << std::endl << std::endl;
+
+    std::cout << "Attempting to call iter with zero length..." << std::endl;
+    try 
+    {
+        iter(strArr, 0, print<std::string>);
+    } 
+    catch (const std::exception &e) 
+    {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
 	return 0;
 }

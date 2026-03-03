@@ -29,8 +29,8 @@ template <typename T>
 class Array
 {
     private:
-    T*              array;
-    unsigned int    n;
+        T*              array;
+        unsigned int    n;
 
     public:
         Array(): array(NULL), n(0) {};
@@ -91,8 +91,6 @@ class Array
         {
             return n;
         }
-
-
 };
 
 #endif
